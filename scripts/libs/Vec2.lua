@@ -19,7 +19,7 @@ Vec2.mt = {
 	end,
 
 	__tostring = function(t)
-		return "{"..tostring(t.x)..", "..tostring(t.y).."}"
+		return "{x: "..tostring(t.x)..", y: "..tostring(t.y).."}"
 	end,
 
 	__eq = function(a,b)

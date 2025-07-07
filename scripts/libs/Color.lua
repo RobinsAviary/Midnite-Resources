@@ -1,6 +1,16 @@
 Color = {}
 Color.mt = {
+	__tostring = function(t)
+		return "{r: "..tostring(t.r)..", g: "..tostring(t.g)..", b: "..tostring(t.b)..", a: "..tostring(t.a).."}"
+	end,
 
+	__eq = function(a,b)
+		return (a.r == b.r and a.g == b.g and a.b == b.b and a.a == b.a)
+	end,
+
+	__len = 4,
+
+	__name = "Color",
 }
 
 Color.New = function(r, g, b, a)
